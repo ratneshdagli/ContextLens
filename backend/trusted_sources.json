@@ -1,0 +1,1265 @@
+[
+ {
+  "domain": "reuters.com",
+  "name": "Reuters",
+  "trust_rank": 1,
+  "type": "wire",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "apnews.com",
+  "name": "AP News",
+  "trust_rank": 1,
+  "type": "wire",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "bbc.com",
+  "name": "BBC News",
+  "trust_rank": 1,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "bbc.co.uk",
+  "name": "BBC News",
+  "trust_rank": 1,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "theguardian.com",
+  "name": "The Guardian",
+  "trust_rank": 1,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "nytimes.com",
+  "name": "The New York Times",
+  "trust_rank": 1,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "wsj.com",
+  "name": "Wall Street Journal",
+  "trust_rank": 1,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "ft.com",
+  "name": "Financial Times",
+  "trust_rank": 1,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "washingtonpost.com",
+  "name": "The Washington Post",
+  "trust_rank": 1,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "economist.com",
+  "name": "The Economist",
+  "trust_rank": 1,
+  "type": "magazine",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "nasa.gov",
+  "name": "NASA",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "who.int",
+  "name": "WHO",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated",
+  "country": "INT"
+ },
+ {
+  "domain": "un.org",
+  "name": "United Nations",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated",
+  "country": "INT"
+ },
+ {
+  "domain": "sec.gov",
+  "name": "SEC",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "federalreserve.gov",
+  "name": "Federal Reserve",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "imf.org",
+  "name": "IMF",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated",
+  "country": "INT"
+ },
+ {
+  "domain": "worldbank.org",
+  "name": "World Bank",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated",
+  "country": "INT"
+ },
+ {
+  "domain": "whitehouse.gov",
+  "name": "White House",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "nih.gov",
+  "name": "NIH",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "cdc.gov",
+  "name": "CDC",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "ecb.europa.eu",
+  "name": "European Central Bank",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "europa.eu",
+  "name": "European Union",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "rbi.org.in",
+  "name": "Reserve Bank of India",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "sebi.gov.in",
+  "name": "SEBI",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "pib.gov.in",
+  "name": "Press Information Bureau",
+  "trust_rank": 1,
+  "type": "official",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "aljazeera.com",
+  "name": "Al Jazeera",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "QA"
+ },
+ {
+  "domain": "npr.org",
+  "name": "NPR",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "bloomberg.com",
+  "name": "Bloomberg",
+  "trust_rank": 2,
+  "type": "financial",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "thehindu.com",
+  "name": "The Hindu",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "hindustantimes.com",
+  "name": "Hindustan Times",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "timesofindia.com",
+  "name": "Times of India",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "ndtv.com",
+  "name": "NDTV",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "sciencemag.org",
+  "name": "Science",
+  "trust_rank": 2,
+  "type": "scientific",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "nature.com",
+  "name": "Nature",
+  "trust_rank": 2,
+  "type": "scientific",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "ncbi.nlm.nih.gov",
+  "name": "NIH PubMed",
+  "trust_rank": 2,
+  "type": "scientific",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "cnn.com",
+  "name": "CNN",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "cbsnews.com",
+  "name": "CBS News",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "nbcnews.com",
+  "name": "NBC News",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "abcnews.go.com",
+  "name": "ABC News",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "politico.com",
+  "name": "Politico",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "theatlantic.com",
+  "name": "The Atlantic",
+  "trust_rank": 2,
+  "type": "magazine",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "foreignaffairs.com",
+  "name": "Foreign Affairs",
+  "trust_rank": 2,
+  "type": "magazine",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "foreignpolicy.com",
+  "name": "Foreign Policy",
+  "trust_rank": 2,
+  "type": "magazine",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "scmp.com",
+  "name": "South China Morning Post",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "HK"
+ },
+ {
+  "domain": "dawn.com",
+  "name": "Dawn",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "PK"
+ },
+ {
+  "domain": "theintercept.com",
+  "name": "The Intercept",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "propublica.org",
+  "name": "ProPublica",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "dw.com",
+  "name": "Deutsche Welle",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "DE"
+ },
+ {
+  "domain": "france24.com",
+  "name": "France 24",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "FR"
+ },
+ {
+  "domain": "rfi.fr",
+  "name": "RFI",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "abc.net.au",
+  "name": "ABC Australia",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "cbc.ca",
+  "name": "CBC Canada",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "telegraph.co.uk",
+  "name": "The Telegraph",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "thetimes.co.uk",
+  "name": "The Times",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "independent.co.uk",
+  "name": "The Independent",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "business-standard.com",
+  "name": "Business Standard",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "livemint.com",
+  "name": "Mint",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "economictimes.indiatimes.com",
+  "name": "The Economic Times",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "lemonde.fr",
+  "name": "Le Monde",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "spiegel.de",
+  "name": "Der Spiegel",
+  "trust_rank": 2,
+  "type": "magazine",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "elpais.com",
+  "name": "El País",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "nikkei.com",
+  "name": "Nikkei Asia",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "kyodonews.net",
+  "name": "Kyodo News",
+  "trust_rank": 2,
+  "type": "wire",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "koreatimes.co.kr",
+  "name": "Korea Times",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "straitstimes.com",
+  "name": "Straits Times",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "reuters.co.in",
+  "name": "Reuters India",
+  "trust_rank": 2,
+  "type": "wire",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "techcrunch.com",
+  "name": "TechCrunch",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "wired.com",
+  "name": "Wired",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "arstechnica.com",
+  "name": "Ars Technica",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "theverge.com",
+  "name": "The Verge",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "engadget.com",
+  "name": "Engadget",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "zdnet.com",
+  "name": "ZDNet",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "venturebeat.com",
+  "name": "VentureBeat",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "axios.com",
+  "name": "Axios",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "vox.com",
+  "name": "Vox",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "businessinsider.com",
+  "name": "Business Insider",
+  "trust_rank": 3,
+  "type": "financial",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "cnbc.com",
+  "name": "CNBC",
+  "trust_rank": 3,
+  "type": "financial",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "marketwatch.com",
+  "name": "MarketWatch",
+  "trust_rank": 3,
+  "type": "financial",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "espn.com",
+  "name": "ESPN",
+  "trust_rank": 3,
+  "type": "sports",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "health.harvard.edu",
+  "name": "Harvard Health",
+  "trust_rank": 3,
+  "type": "health",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "webmd.com",
+  "name": "WebMD",
+  "trust_rank": 3,
+  "type": "health",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "mayoclinic.org",
+  "name": "Mayo Clinic",
+  "trust_rank": 3,
+  "type": "health",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "pewresearch.org",
+  "name": "Pew Research",
+  "trust_rank": 3,
+  "type": "research",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "brookings.edu",
+  "name": "Brookings Institution",
+  "trust_rank": 3,
+  "type": "research",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "cfr.org",
+  "name": "Council on Foreign Relations",
+  "trust_rank": 3,
+  "type": "research",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "chathamhouse.org",
+  "name": "Chatham House",
+  "trust_rank": 3,
+  "type": "research",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "rand.org",
+  "name": "RAND Corporation",
+  "trust_rank": 3,
+  "type": "research",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "carnegieendowment.org",
+  "name": "Carnegie Endowment",
+  "trust_rank": 3,
+  "type": "research",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "thehill.com",
+  "name": "The Hill",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "theprint.in",
+  "name": "The Print",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "scroll.in",
+  "name": "Scroll",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "thewire.in",
+  "name": "The Wire",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "quartz.com",
+  "name": "Quartz",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "mit.edu",
+  "name": "MIT News",
+  "trust_rank": 3,
+  "type": "academic",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "stanford.edu",
+  "name": "Stanford News",
+  "trust_rank": 3,
+  "type": "academic",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "harvard.edu",
+  "name": "Harvard News",
+  "trust_rank": 3,
+  "type": "academic",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "arxiv.org",
+  "name": "arXiv",
+  "trust_rank": 3,
+  "type": "academic",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "ssrn.com",
+  "name": "SSRN",
+  "trust_rank": 3,
+  "type": "academic",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "cricinfo.com",
+  "name": "ESPNcricinfo",
+  "trust_rank": 3,
+  "type": "sports",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "bworldonline.com",
+  "name": "Business World",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "moneycontrol.com",
+  "name": "Moneycontrol",
+  "trust_rank": 3,
+  "type": "financial",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "outlookindia.com",
+  "name": "Outlook India",
+  "trust_rank": 3,
+  "type": "magazine",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "newslaundry.com",
+  "name": "Newslaundry",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "medscape.com",
+  "name": "Medscape",
+  "trust_rank": 3,
+  "type": "health",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "statnews.com",
+  "name": "STAT",
+  "trust_rank": 3,
+  "type": "health",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "science.org",
+  "name": "Science AAAS",
+  "trust_rank": 3,
+  "type": "scientific",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "newscientist.com",
+  "name": "New Scientist",
+  "trust_rank": 3,
+  "type": "scientific",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "popularmechanics.com",
+  "name": "Popular Mechanics",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "digitaltrends.com",
+  "name": "Digital Trends",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "tomsguide.com",
+  "name": "Tom's Guide",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "9to5mac.com",
+  "name": "9to5Mac",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "9to5google.com",
+  "name": "9to5Google",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated"
+ },
+ {
+  "domain": "skynews.com",
+  "name": "Sky News",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "news.sky.com",
+  "name": "Sky News",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "indiatimes.com",
+  "name": "Times of India",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "indianexpress.com",
+  "name": "The Indian Express",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "technologyreview.com",
+  "name": "MIT Technology Review",
+  "trust_rank": 2,
+  "type": "magazine",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "spectrum.ieee.org",
+  "name": "IEEE Spectrum",
+  "trust_rank": 2,
+  "type": "magazine",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "altnews.in",
+  "name": "Alt News",
+  "trust_rank": 2,
+  "type": "fact-checker",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "boomlive.in",
+  "name": "BOOM",
+  "trust_rank": 2,
+  "type": "fact-checker",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "factly.in",
+  "name": "Factly",
+  "trust_rank": 2,
+  "type": "fact-checker",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "newschecker.in",
+  "name": "Newschecker",
+  "trust_rank": 2,
+  "type": "fact-checker",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "vishvasnews.com",
+  "name": "Vishvas News",
+  "trust_rank": 2,
+  "type": "fact-checker",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "theconversation.com",
+  "name": "The Conversation",
+  "trust_rank": 2,
+  "type": "explainer",
+  "verified_by": "curated",
+  "country": "GLOBAL"
+ },
+ {
+  "domain": "deccanherald.com",
+  "name": "Deccan Herald",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "indiatoday.in",
+  "name": "India Today",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "news18.com",
+  "name": "News18",
+  "trust_rank": 3,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "thehindubusinessline.com",
+  "name": "The Hindu BusinessLine",
+  "trust_rank": 2,
+  "type": "financial",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "barandbench.com",
+  "name": "Bar & Bench",
+  "trust_rank": 2,
+  "type": "legal",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "medianama.com",
+  "name": "MediaNama",
+  "trust_rank": 2,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "inc42.com",
+  "name": "Inc42",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "yourstory.com",
+  "name": "YourStory",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "IN"
+ },
+ {
+  "domain": "mongabay.com",
+  "name": "Mongabay",
+  "trust_rank": 2,
+  "type": "scientific",
+  "verified_by": "curated",
+  "country": "GLOBAL"
+ },
+ {
+  "domain": "carbonbrief.org",
+  "name": "Carbon Brief",
+  "trust_rank": 2,
+  "type": "scientific",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "channelnewsasia.com",
+  "name": "Channel NewsAsia",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "SG"
+ },
+ {
+  "domain": "japantimes.co.jp",
+  "name": "The Japan Times",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "JP"
+ },
+ {
+  "domain": "thediplomat.com",
+  "name": "The Diplomat",
+  "trust_rank": 2,
+  "type": "magazine",
+  "verified_by": "curated",
+  "country": "ASIA"
+ },
+ {
+  "domain": "kyivindependent.com",
+  "name": "The Kyiv Independent",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "UA"
+ },
+ {
+  "domain": "timesofisrael.com",
+  "name": "The Times of Israel",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "IL"
+ },
+ {
+  "domain": "middleeasteye.net",
+  "name": "Middle East Eye",
+  "trust_rank": 3,
+  "type": "digital",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "africanews.com",
+  "name": "Africanews",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "AFRICA"
+ },
+ {
+  "domain": "euronews.com",
+  "name": "Euronews",
+  "trust_rank": 2,
+  "type": "broadcaster",
+  "verified_by": "curated",
+  "country": "EU"
+ },
+ {
+  "domain": "politico.eu",
+  "name": "Politico Europe",
+  "trust_rank": 2,
+  "type": "newspaper",
+  "verified_by": "curated",
+  "country": "EU"
+ },
+ {
+  "domain": "time.com",
+  "name": "TIME",
+  "trust_rank": 2,
+  "type": "magazine",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "fortune.com",
+  "name": "Fortune",
+  "trust_rank": 3,
+  "type": "financial",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "yahoo.com",
+  "name": "Yahoo Finance",
+  "trust_rank": 3,
+  "type": "financial",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "restofworld.org",
+  "name": "Rest of World",
+  "trust_rank": 2,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "GLOBAL"
+ },
+ {
+  "domain": "404media.co",
+  "name": "404 Media",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "theregister.com",
+  "name": "The Register",
+  "trust_rank": 3,
+  "type": "tech",
+  "verified_by": "curated",
+  "country": "UK"
+ },
+ {
+  "domain": "quantamagazine.org",
+  "name": "Quanta Magazine",
+  "trust_rank": 2,
+  "type": "scientific",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "sciencenews.org",
+  "name": "Science News",
+  "trust_rank": 2,
+  "type": "scientific",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "sciencedaily.com",
+  "name": "Science Daily",
+  "trust_rank": 3,
+  "type": "scientific",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "phys.org",
+  "name": "Phys.org",
+  "trust_rank": 3,
+  "type": "scientific",
+  "verified_by": "curated",
+  "country": "GLOBAL"
+ },
+ {
+  "domain": "kffhealthnews.org",
+  "name": "KFF Health News",
+  "trust_rank": 2,
+  "type": "health",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "espncricinfo.com",
+  "name": "ESPNcricinfo",
+  "trust_rank": 3,
+  "type": "sports",
+  "verified_by": "curated",
+  "country": "GLOBAL"
+ },
+ {
+  "domain": "variety.com",
+  "name": "Variety",
+  "trust_rank": 3,
+  "type": "culture",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "deadline.com",
+  "name": "Deadline",
+  "trust_rank": 3,
+  "type": "culture",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "rollingstone.com",
+  "name": "Rolling Stone",
+  "trust_rank": 3,
+  "type": "culture",
+  "verified_by": "curated",
+  "country": "US"
+ },
+ {
+  "domain": "indiatvnews.com",
+  "name": "News in English: Latest News, Breaking News, Live Updates",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "auditor",
+  "country": ""
+ },
+ {
+  "domain": "timesnownews.com",
+  "name": "India Latest News, Breaking News Today, Top News Headlines",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "auditor",
+  "country": ""
+ },
+ {
+  "domain": "nationalheraldindia.com",
+  "name": "National Herald",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "auditor",
+  "country": ""
+ },
+ {
+  "domain": "businesstoday.in",
+  "name": "Business News India: Latest Business News Today, Share Marke",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "auditor",
+  "country": "IN"
+ },
+ {
+  "domain": "newindianexpress.com",
+  "name": "newindianexpress",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "auditor",
+  "country": ""
+ },
+ {
+  "domain": "english.mathrubhumi.com",
+  "name": "Mathrubhumi English",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "auditor",
+  "country": ""
+ },
+ {
+  "domain": "deccanchronicle.com",
+  "name": "Deccan Chronicle",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "auditor",
+  "country": ""
+ },
+ {
+  "domain": "telanganatoday.com",
+  "name": "Telangana Today",
+  "trust_rank": 3,
+  "type": "newspaper",
+  "verified_by": "auditor",
+  "country": ""
+ }
+]

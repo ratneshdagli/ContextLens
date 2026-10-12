@@ -1,0 +1,34 @@
+# ContextLens v3 — backend requirements (Python 3.11+)
+#
+#   python -m venv venv && venv\Scripts\activate      (Windows)
+#   pip install -r backend/requirements.txt
+
+# Web
+fastapi>=0.115
+uvicorn[standard]>=0.32
+sse-starlette>=2.1
+python-dotenv>=1.0
+
+# Storage / HTTP
+aiosqlite>=0.20
+httpx>=0.27
+
+# Ingestion & extraction
+feedparser>=6.0
+trafilatura>=1.12
+beautifulsoup4>=4.12
+lxml>=5.3
+charset-normalizer>=3.4
+
+# Text / dates / numerics
+dateparser>=1.2
+numpy>=1.24
+
+# Entities for the story map (zero-shot NER; CPU is fine). Also pulls in torch.
+gliner>=0.2
+
+# Optional: only used as a fallback embedder if the LM Studio embedding model is unavailable
+sentence-transformers>=3.0
+
+# Tests
+pytest>=8.0

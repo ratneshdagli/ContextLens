@@ -1,0 +1,872 @@
+[
+{
+"url": "https://www.thehindu.com/news/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "india"
+},
+{
+"url": "https://www.thehindu.com/news/cities/Mumbai/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "india"
+},
+{
+"url": "https://www.thehindu.com/news/cities/Delhi/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "india"
+},
+{
+"url": "https://www.thehindu.com/news/international/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "world"
+},
+{
+"url": "https://www.thehindu.com/business/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "business"
+},
+{
+"url": "https://www.thehindu.com/business/Economy/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "business"
+},
+{
+"url": "https://www.thehindu.com/sci-tech/technology/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "tech"
+},
+{
+"url": "https://www.thehindu.com/sci-tech/science/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "science"
+},
+{
+"url": "https://www.thehindu.com/sci-tech/health/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "health"
+},
+{
+"url": "https://www.thehindu.com/sport/feeder/default.rss",
+"outlet": "The Hindu",
+"topic": "sports"
+},
+{
+"url": "https://indianexpress.com/feed/",
+"outlet": "The Indian Express",
+"topic": "india"
+},
+{
+"url": "https://indianexpress.com/section/explained/feed/",
+"outlet": "The Indian Express",
+"topic": "india"
+},
+{
+"url": "https://indianexpress.com/section/cities/feed/",
+"outlet": "The Indian Express",
+"topic": "india"
+},
+{
+"url": "https://indianexpress.com/section/political-pulse/feed/",
+"outlet": "The Indian Express",
+"topic": "india"
+},
+{
+"url": "https://indianexpress.com/section/education/feed/",
+"outlet": "The Indian Express",
+"topic": "india"
+},
+{
+"url": "https://indianexpress.com/section/world/feed/",
+"outlet": "The Indian Express",
+"topic": "world"
+},
+{
+"url": "https://indianexpress.com/section/business/feed/",
+"outlet": "The Indian Express",
+"topic": "business"
+},
+{
+"url": "https://indianexpress.com/section/technology/feed/",
+"outlet": "The Indian Express",
+"topic": "tech"
+},
+{
+"url": "https://indianexpress.com/section/sports/feed/",
+"outlet": "The Indian Express",
+"topic": "sports"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/cities/mumbai-news/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "india"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/cities/delhi-news/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "india"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/education/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "india"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/world-news/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "world"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/business/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "business"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/technology/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "tech"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/sports/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "sports"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/cricket/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "sports"
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/entertainment/rssfeed.xml",
+"outlet": "Hindustan Times",
+"topic": "culture"
+},
+{
+"url": "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
+"outlet": "The Times of India",
+"topic": "india"
+},
+{
+"url": "https://timesofindia.indiatimes.com/rssfeeds/-2128839596.cms",
+"outlet": "The Times of India",
+"topic": "india"
+},
+{
+"url": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
+"outlet": "The Times of India",
+"topic": "world"
+},
+{
+"url": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms",
+"outlet": "The Times of India",
+"topic": "business"
+},
+{
+"url": "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms",
+"outlet": "The Times of India",
+"topic": "sports"
+},
+{
+"url": "https://timesofindia.indiatimes.com/rssfeeds/-2128672765.cms",
+"outlet": "The Times of India",
+"topic": "science"
+},
+{
+"url": "https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms",
+"outlet": "The Times of India",
+"topic": "culture"
+},
+{
+"url": "https://feeds.feedburner.com/ndtvnews-india-news",
+"outlet": "NDTV",
+"topic": "india"
+},
+{
+"url": "https://feeds.feedburner.com/ndtvnews-latest",
+"outlet": "NDTV",
+"topic": "india"
+},
+{
+"url": "https://feeds.feedburner.com/ndtvnews-world-news",
+"outlet": "NDTV",
+"topic": "world"
+},
+{
+"url": "https://feeds.feedburner.com/ndtvprofit-latest",
+"outlet": "NDTV",
+"topic": "business"
+},
+{
+"url": "https://feeds.feedburner.com/gadgets360-latest",
+"outlet": "NDTV",
+"topic": "tech"
+},
+{
+"url": "https://feeds.feedburner.com/ndtvsports-latest",
+"outlet": "NDTV",
+"topic": "sports"
+},
+{
+"url": "https://feeds.feedburner.com/ndtvmovies-latest",
+"outlet": "NDTV",
+"topic": "culture"
+},
+{
+"url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms",
+"outlet": "The Economic Times",
+"topic": "business"
+},
+{
+"url": "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
+"outlet": "The Economic Times",
+"topic": "business"
+},
+{
+"url": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms",
+"outlet": "The Economic Times",
+"topic": "tech"
+},
+{
+"url": "https://economictimes.indiatimes.com/news/politics-and-nation/rssfeeds/1052732854.cms",
+"outlet": "The Economic Times",
+"topic": "india"
+},
+{
+"url": "https://economictimes.indiatimes.com/markets/stocks/rssfeeds/2146842.cms",
+"outlet": "The Economic Times",
+"topic": "markets"
+},
+{
+"url": "https://www.livemint.com/rss/companies",
+"outlet": "Mint",
+"topic": "business"
+},
+{
+"url": "https://www.livemint.com/rss/economy",
+"outlet": "Mint",
+"topic": "business"
+},
+{
+"url": "https://www.livemint.com/rss/politics",
+"outlet": "Mint",
+"topic": "india"
+},
+{
+"url": "https://www.livemint.com/rss/technology",
+"outlet": "Mint",
+"topic": "tech"
+},
+{
+"url": "https://www.business-standard.com/rss/home_page_top_stories.rss",
+"outlet": "Business Standard",
+"topic": "business"
+},
+{
+"url": "https://www.business-standard.com/rss/economy-policy-102.rss",
+"outlet": "Business Standard",
+"topic": "business"
+},
+{
+"url": "https://www.business-standard.com/rss/companies-101.rss",
+"outlet": "Business Standard",
+"topic": "business"
+},
+{
+"url": "https://www.business-standard.com/rss/markets-106.rss",
+"outlet": "Business Standard",
+"topic": "markets"
+},
+{
+"url": "https://www.business-standard.com/rss/politics-102.rss",
+"outlet": "Business Standard",
+"topic": "india"
+},
+{
+"url": "https://www.thehindubusinessline.com/feeder/default.rss",
+"outlet": "The Hindu BusinessLine",
+"topic": "business"
+},
+{
+"url": "https://www.thehindubusinessline.com/economy/feeder/default.rss",
+"outlet": "The Hindu BusinessLine",
+"topic": "business"
+},
+{
+"url": "https://www.thehindubusinessline.com/markets/feeder/default.rss",
+"outlet": "The Hindu BusinessLine",
+"topic": "markets"
+},
+{
+"url": "https://feeds.feedburner.com/ScrollinArticles.rss",
+"outlet": "Scroll.in",
+"topic": "india"
+},
+{
+"url": "https://www.news18.com/rss/india.xml",
+"outlet": "News18",
+"topic": "india"
+},
+{
+"url": "https://www.news18.com/rss/world.xml",
+"outlet": "News18",
+"topic": "world"
+},
+{
+"url": "https://www.news18.com/rss/business.xml",
+"outlet": "News18",
+"topic": "business"
+},
+{
+"url": "https://www.indiatoday.in/rss/1206578",
+"outlet": "India Today",
+"topic": "india"
+},
+{
+"url": "https://www.indiatoday.in/rss/1206577",
+"outlet": "India Today",
+"topic": "world"
+},
+{
+"url": "https://www.deccanherald.com/feed",
+"outlet": "Deccan Herald",
+"topic": "india"
+},
+{
+"url": "https://sportstar.thehindu.com/feeder/default.rss",
+"outlet": "Sportstar",
+"topic": "sports"
+},
+{
+"url": "https://sportstar.thehindu.com/cricket/feeder/default.rss",
+"outlet": "Sportstar",
+"topic": "sports"
+},
+{
+"url": "https://www.espncricinfo.com/rss/content/story/feeds/0.xml",
+"outlet": "ESPNcricinfo",
+"topic": "sports"
+},
+{
+"url": "https://inc42.com/feed/",
+"outlet": "Inc42",
+"topic": "tech"
+},
+{
+"url": "https://www.medianama.com/feed/",
+"outlet": "MediaNama",
+"topic": "tech"
+},
+{
+"url": "https://yourstory.com/feed",
+"outlet": "YourStory",
+"topic": "tech"
+},
+{
+"url": "https://india.mongabay.com/feed/",
+"outlet": "Mongabay India",
+"topic": "science"
+},
+{
+"url": "https://www.barandbench.com/feed",
+"outlet": "Bar & Bench",
+"topic": "india"
+},
+{
+"url": "https://www.boomlive.in/feed",
+"outlet": "BOOM",
+"topic": "india"
+},
+{
+"url": "https://www.altnews.in/feed/",
+"outlet": "Alt News",
+"topic": "india"
+},
+{
+"url": "https://factly.in/feed/",
+"outlet": "Factly",
+"topic": "india"
+},
+{
+"url": "https://newschecker.in/feed",
+"outlet": "Newschecker",
+"topic": "india"
+},
+{
+"url": "https://www.vishvasnews.com/english/feed/",
+"outlet": "Vishvas News",
+"topic": "india"
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml",
+"outlet": "BBC News",
+"topic": "india"
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+"outlet": "BBC News",
+"topic": "world"
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+"outlet": "BBC News",
+"topic": "world"
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/africa/rss.xml",
+"outlet": "BBC News",
+"topic": "world"
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+"outlet": "BBC News",
+"topic": "world"
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+"outlet": "BBC News",
+"topic": "world"
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
+"outlet": "BBC News",
+"topic": "world"
+},
+{
+"url": "https://feeds.bbci.co.uk/sport/cricket/rss.xml",
+"outlet": "BBC Sport",
+"topic": "sports"
+},
+{
+"url": "https://www.theguardian.com/world/india/rss",
+"outlet": "The Guardian",
+"topic": "india"
+},
+{
+"url": "https://www.theguardian.com/world/asia-pacific/rss",
+"outlet": "The Guardian",
+"topic": "world"
+},
+{
+"url": "https://www.theguardian.com/world/middleeast/rss",
+"outlet": "The Guardian",
+"topic": "world"
+},
+{
+"url": "https://www.theguardian.com/world/europe-news/rss",
+"outlet": "The Guardian",
+"topic": "world"
+},
+{
+"url": "https://www.theguardian.com/us-news/rss",
+"outlet": "The Guardian",
+"topic": "world"
+},
+{
+"url": "https://www.theguardian.com/world/africa/rss",
+"outlet": "The Guardian",
+"topic": "world"
+},
+{
+"url": "https://www.theguardian.com/environment/rss",
+"outlet": "The Guardian",
+"topic": "science"
+},
+{
+"url": "https://www.theguardian.com/business/rss",
+"outlet": "The Guardian",
+"topic": "business"
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml",
+"outlet": "The New York Times",
+"topic": "world"
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/MiddleEast.xml",
+"outlet": "The New York Times",
+"topic": "world"
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
+"outlet": "The New York Times",
+"topic": "world"
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Africa.xml",
+"outlet": "The New York Times",
+"topic": "world"
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Americas.xml",
+"outlet": "The New York Times",
+"topic": "world"
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+"outlet": "The New York Times",
+"topic": "world"
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml",
+"outlet": "The New York Times",
+"topic": "science"
+},
+{
+"url": "https://feeds.nbcnews.com/nbcnews/public/news",
+"outlet": "NBC News",
+"topic": "world"
+},
+{
+"url": "https://feeds.nbcnews.com/nbcnews/public/world",
+"outlet": "NBC News",
+"topic": "world"
+},
+{
+"url": "https://feeds.npr.org/1001/rss.xml",
+"outlet": "NPR",
+"topic": "world"
+},
+{
+"url": "https://feeds.npr.org/1006/rss.xml",
+"outlet": "NPR",
+"topic": "business"
+},
+{
+"url": "https://feeds.npr.org/1007/rss.xml",
+"outlet": "NPR",
+"topic": "science"
+},
+{
+"url": "https://rss.dw.com/rdf/rss-en-all",
+"outlet": "Deutsche Welle",
+"topic": "world"
+},
+{
+"url": "https://rss.dw.com/rdf/rss-en-asia",
+"outlet": "Deutsche Welle",
+"topic": "world"
+},
+{
+"url": "https://rss.dw.com/rdf/rss-en-bus",
+"outlet": "Deutsche Welle",
+"topic": "business"
+},
+{
+"url": "https://www.france24.com/en/asia-pacific/rss",
+"outlet": "France 24",
+"topic": "world"
+},
+{
+"url": "https://www.france24.com/en/middle-east/rss",
+"outlet": "France 24",
+"topic": "world"
+},
+{
+"url": "https://www.france24.com/en/europe/rss",
+"outlet": "France 24",
+"topic": "world"
+},
+{
+"url": "https://www.france24.com/en/africa/rss",
+"outlet": "France 24",
+"topic": "world"
+},
+{
+"url": "https://www.france24.com/en/business/rss",
+"outlet": "France 24",
+"topic": "business"
+},
+{
+"url": "https://www.scmp.com/rss/91/feed",
+"outlet": "South China Morning Post",
+"topic": "world"
+},
+{
+"url": "https://www.scmp.com/rss/4/feed",
+"outlet": "South China Morning Post",
+"topic": "world"
+},
+{
+"url": "https://www.scmp.com/rss/2/feed",
+"outlet": "South China Morning Post",
+"topic": "world"
+},
+{
+"url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml",
+"outlet": "Channel NewsAsia",
+"topic": "world"
+},
+{
+"url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6511",
+"outlet": "Channel NewsAsia",
+"topic": "world"
+},
+{
+"url": "https://www.straitstimes.com/news/asia/rss.xml",
+"outlet": "The Straits Times",
+"topic": "world"
+},
+{
+"url": "https://www.straitstimes.com/news/world/rss.xml",
+"outlet": "The Straits Times",
+"topic": "world"
+},
+{
+"url": "https://www.japantimes.co.jp/feed/",
+"outlet": "The Japan Times",
+"topic": "world"
+},
+{
+"url": "https://thediplomat.com/feed/",
+"outlet": "The Diplomat",
+"topic": "world"
+},
+{
+"url": "https://foreignpolicy.com/feed/",
+"outlet": "Foreign Policy",
+"topic": "world"
+},
+{
+"url": "https://kyivindependent.com/news-archive/rss/",
+"outlet": "The Kyiv Independent",
+"topic": "world"
+},
+{
+"url": "https://www.timesofisrael.com/feed/",
+"outlet": "The Times of Israel",
+"topic": "world"
+},
+{
+"url": "https://www.middleeasteye.net/rss",
+"outlet": "Middle East Eye",
+"topic": "world"
+},
+{
+"url": "https://www.africanews.com/feed/rss",
+"outlet": "Africanews",
+"topic": "world"
+},
+{
+"url": "https://www.euronews.com/rss?format=mrss",
+"outlet": "Euronews",
+"topic": "world"
+},
+{
+"url": "https://www.euronews.com/rss",
+"outlet": "Euronews",
+"topic": "world"
+},
+{
+"url": "https://www.abc.net.au/news/feed/2942460/rss.xml",
+"outlet": "ABC News (Australia)",
+"topic": "world"
+},
+{
+"url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+"outlet": "ABC News (Australia)",
+"topic": "world"
+},
+{
+"url": "https://www.cbc.ca/webfeed/rss/rss-world",
+"outlet": "CBC News",
+"topic": "world"
+},
+{
+"url": "https://www.cbc.ca/webfeed/rss/rss-topstories",
+"outlet": "CBC News",
+"topic": "world"
+},
+{
+"url": "https://www.independent.co.uk/news/world/rss",
+"outlet": "The Independent",
+"topic": "world"
+},
+{
+"url": "https://feeds.skynews.com/feeds/rss/home.xml",
+"outlet": "Sky News",
+"topic": "world"
+},
+{
+"url": "https://api.axios.com/feed/",
+"outlet": "Axios",
+"topic": "politics"
+},
+{
+"url": "https://time.com/feed/",
+"outlet": "TIME",
+"topic": "world"
+},
+{
+"url": "https://www.theatlantic.com/feed/all/",
+"outlet": "The Atlantic",
+"topic": "world"
+},
+{
+"url": "https://www.politico.eu/feed/",
+"outlet": "Politico",
+"topic": "politics"
+},
+{
+"url": "https://theconversation.com/global/articles.atom",
+"outlet": "The Conversation",
+"topic": "world"
+},
+{
+"url": "https://www.vox.com/rss/index.xml",
+"outlet": "Vox",
+"topic": "world"
+},
+{
+"url": "https://feeds.bloomberg.com/markets/news.rss",
+"outlet": "Bloomberg",
+"topic": "business"
+},
+{
+"url": "https://feeds.bloomberg.com/economics/news.rss",
+"outlet": "Bloomberg",
+"topic": "business"
+},
+{
+"url": "https://feeds.bloomberg.com/technology/news.rss",
+"outlet": "Bloomberg",
+"topic": "tech"
+},
+{
+"url": "https://feeds.bloomberg.com/politics/news.rss",
+"outlet": "Bloomberg",
+"topic": "politics"
+},
+{
+"url": "https://fortune.com/feed/",
+"outlet": "Fortune",
+"topic": "business"
+},
+{
+"url": "https://www.economist.com/finance-and-economics/rss.xml",
+"outlet": "The Economist",
+"topic": "business"
+},
+{
+"url": "https://finance.yahoo.com/news/rssindex",
+"outlet": "Yahoo Finance",
+"topic": "markets"
+},
+{
+"url": "https://www.engadget.com/rss.xml",
+"outlet": "Engadget",
+"topic": "tech"
+},
+{
+"url": "https://www.theregister.com/headlines.atom",
+"outlet": "The Register",
+"topic": "tech"
+},
+{
+"url": "https://restofworld.org/feed/",
+"outlet": "Rest of World",
+"topic": "tech"
+},
+{
+"url": "https://www.404media.co/rss/",
+"outlet": "404 Media",
+"topic": "tech"
+},
+{
+"url": "https://www.sciencedaily.com/rss/all.xml",
+"outlet": "Science Daily",
+"topic": "science"
+},
+{
+"url": "https://phys.org/rss-feed/",
+"outlet": "Phys.org",
+"topic": "science"
+},
+{
+"url": "https://www.newscientist.com/feed/home/",
+"outlet": "New Scientist",
+"topic": "science"
+},
+{
+"url": "https://www.sciencenews.org/feed",
+"outlet": "Science News",
+"topic": "science"
+},
+{
+"url": "https://api.quantamagazine.org/feed/",
+"outlet": "Quanta Magazine",
+"topic": "science"
+},
+{
+"url": "https://www.carbonbrief.org/feed/",
+"outlet": "Carbon Brief",
+"topic": "science"
+},
+{
+"url": "https://kffhealthnews.org/feed/",
+"outlet": "KFF Health News",
+"topic": "health"
+},
+{
+"url": "https://variety.com/feed/",
+"outlet": "Variety",
+"topic": "culture"
+},
+{
+"url": "https://deadline.com/feed/",
+"outlet": "Deadline",
+"topic": "culture"
+},
+{
+"url": "https://www.rollingstone.com/feed/",
+"outlet": "Rolling Stone",
+"topic": "culture"
+},
+{
+"url": "https://www.theguardian.com/sport/cricket/rss",
+"outlet": "The Guardian",
+"topic": "sports"
+},
+{
+"url": "https://www.theguardian.com/football/rss",
+"outlet": "The Guardian",
+"topic": "sports"
+},
+{
+"url": "https://api.indiatvnews.com/v3/en/gp7naGtJSQrs9oi/rss/topstory",
+"outlet": "News in English: Latest News, Breaking News, Live Updates",
+"topic": "world"
+},
+{
+"url": "https://www.timesnownews.com/feeds/gns-en-latest.xml",
+"outlet": "India Latest News, Breaking News Today, Top News Headlines",
+"topic": "world"
+},
+{
+"url": "https://www.nationalheraldindia.com/stories.rss",
+"outlet": "National Herald",
+"topic": "world"
+},
+{
+"url": "https://www.businesstoday.in/rssfeeds?id=home",
+"outlet": "Business News India: Latest Business News Today, Share Marke",
+"topic": "india"
+},
+{
+"url": "https://www.newindianexpress.com/stories.rss",
+"outlet": "newindianexpress",
+"topic": "world"
+},
+{
+"url": "https://english.mathrubhumi.com/sitemaps/mathrubhumien/rss",
+"outlet": "Mathrubhumi English",
+"topic": "world"
+},
+{
+"url": "https://www.deccanchronicle.com/google_feeds.xml",
+"outlet": "Deccan Chronicle",
+"topic": "world"
+},
+{
+"url": "https://telanganatoday.com/feed",
+"outlet": "Telangana Today",
+"topic": "world"
+}
+]

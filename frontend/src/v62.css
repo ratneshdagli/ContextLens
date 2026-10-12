@@ -1,0 +1,49 @@
+/* v6.2 — reader channels (own categories) */
+[data-topic^="ch:"] { --tc: var(--accent); }
+
+.pill.chan i { background: var(--accent); }
+.pill.chan-add { border-style: dashed; color: var(--ink-3); text-decoration: none; }
+.pill.chan-add:hover { color: var(--ink); }
+
+.chan-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 14px; flex-wrap: wrap; margin: 4px 0 14px; padding: 14px 16px; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 12px; background: var(--surface); }
+.chan-head h2 { font-family: var(--display); font-size: 24px; letter-spacing: -.02em; margin: 2px 0 2px; }
+
+.why-line { display: flex; align-items: flex-start; gap: 6px; margin: 6px 0 0; font-size: 12.5px; color: var(--accent); }
+.why-line svg { flex: none; margin-top: 2px; }
+
+.chan-list { display: grid; gap: 16px; margin-top: 18px; }
+.chan-new { display: grid; gap: 10px; }
+.chan-new textarea, .chan-edit textarea { resize: vertical; font: inherit; }
+.chan-card.off { opacity: .6; }
+.chan-top { display: flex; gap: 12px; align-items: flex-start; }
+.chan-actions { display: flex; gap: 2px; flex: none; }
+.chan-edit { display: grid; gap: 8px; }
+.chan-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.btn.danger { color: var(--bad); }
+.chan-body { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); display: grid; gap: 10px; }
+.chan-body h4 { margin-top: 10px; font-size: 13px; }
+.chan-settings { display: flex; gap: 22px 28px; flex-wrap: wrap; align-items: flex-start; }
+.chan-settings label { display: block; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 6px; }
+.chan-settings .field { width: 120px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.chips .field { flex: 1 1 200px; min-width: 160px; }
+
+.feed-row { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.feed-row.off { opacity: .5; }
+.feed-row .tag { margin-left: 8px; font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.feed-add { display: flex; gap: 8px; margin-top: 10px; }
+.feed-add .field { flex: 1; min-width: 0; }
+
+@media (max-width: 640px) {
+  .feed-row { grid-template-columns: 1fr auto; }
+  .feed-row > button:last-child { grid-column: 2; }
+  .chan-settings .field { width: 100%; }
+}
+
+/* topic tabs that slide: arrows fade in at whichever edge has more */
+.pillwrap { position: relative; }
+.pillwrap .pillrow { scroll-behavior: smooth; }
+.pill-arrow { position: absolute; top: 0; z-index: 2; width: 34px; height: 34px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); font-size: 20px; line-height: 1; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+.pill-arrow.l { left: -6px; }
+.pill-arrow.r { right: -6px; }
+.pill-arrow:hover { background: var(--ink); color: var(--bg); }

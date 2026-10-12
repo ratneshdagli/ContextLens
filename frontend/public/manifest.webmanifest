@@ -1,0 +1,10 @@
+{
+  "name": "ContextLens",
+  "short_name": "ContextLens",
+  "description": "A news assistant that explains what happened, why, and how we got here.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#1a1611",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

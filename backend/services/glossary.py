@@ -1,0 +1,211 @@
+"""ContextLens v4 — curated glossary of terms that news readers keep tripping over.
+
+Small local models define jargon inconsistently ("FIR: a police report filed by the parents"), so the definitions
+readers see for these terms are hand-written and deterministic. The explainer only asks the model for terms that are
+NOT in this list. Definitions are general (what the term means), never claims about the current story.
+"""
+
+from __future__ import annotations
+
+import re
+
+# term -> (regex of aliases, plain-language meaning)
+_ENTRIES: dict[str, tuple[str, str]] = {
+    # ── law & policing (India-heavy, as most readers here follow it) ──
+    "FIR": (r"FIR|F\.I\.R\.|First Information Report",
+            "First Information Report: the first written record police make when they are told about a crime. It starts the police investigation; it does not mean the person named is guilty."),
+    "chargesheet": (r"charge[- ]?sheet|chargesheeted",
+                    "The formal report police file in court at the end of an investigation, listing the charges they want the court to try."),
+    "bail": (r"bail",
+             "Temporary release of an accused person while their case is still going on, usually on conditions such as paying a bond."),
+    "anticipatory bail": (r"anticipatory bail",
+                          "Bail granted in advance to someone who fears they will be arrested, so they are released immediately if they are."),
+    "status quo": (r"status quo",
+                   "Keeping things exactly as they are now. A court often orders it so that nothing changes until it has decided the case."),
+    "stay order": (r"stay order|stayed the|court stay",
+                   "A court order that pauses a decision, law or action until the court has heard the case fully."),
+    "PIL": (r"PIL|public interest litigation",
+            "Public Interest Litigation: a case brought to court on behalf of the public (or a group) rather than for a personal grievance."),
+    "writ petition": (r"writ petition|writ",
+                      "A formal request to a High Court or the Supreme Court to order the government or an authority to do, or stop doing, something."),
+    "ordinance": (r"ordinance",
+                  "A law issued directly by the President or a Governor when Parliament or the state legislature is not in session. It must later be approved by the legislature."),
+    "quorum": (r"quorum",
+               "The minimum number of members who must be present for a meeting or vote to count as valid."),
+    "suo motu": (r"suo motu|suo moto",
+                 "When a court or authority starts a case on its own, without anyone filing a complaint."),
+    "CBI": (r"CBI|Central Bureau of Investigation",
+            "Central Bureau of Investigation: India's main national agency for investigating serious crimes and corruption."),
+    "ED": (r"Enforcement Directorate",
+           "Enforcement Directorate: the Indian agency that investigates money laundering and violations of foreign-exchange law."),
+    "NIA": (r"NIA|National Investigation Agency",
+            "National Investigation Agency: India's federal agency for investigating terrorism and related crimes."),
+    "SC/ST Act": (r"SC/ST Act|SC/ST \(Prevention of Atrocities\) Act|Atrocities Act",
+                  "A law that punishes crimes and caste-based abuse against members of Scheduled Castes and Scheduled Tribes, with strict provisions on arrest and bail."),
+    "sedition": (r"sedition",
+                 "An old colonial-era offence of speech or action against the government. It is controversial and courts have restricted its use."),
+    "UAPA": (r"UAPA|Unlawful Activities \(Prevention\) Act",
+             "India's anti-terror law. It allows longer detention without charge and makes bail very hard to get."),
+    "habeas corpus": (r"habeas corpus",
+                      "A court order demanding that a person who is being held be brought before the court, so it can decide whether the detention is legal."),
+    # ── politics & government ──
+    "Lok Sabha": (r"Lok Sabha",
+                  "The lower house of India's Parliament, whose members are directly elected by voters. The Prime Minister is normally from the party or alliance with a majority here."),
+    "Rajya Sabha": (r"Rajya Sabha",
+                    "The upper house of India's Parliament. Its members are chosen mostly by state legislators, and it reviews laws passed by the Lok Sabha."),
+    "no-confidence motion": (r"no[- ]confidence (?:motion|vote)",
+                             "A vote in a legislature to decide whether the government still has majority support. If it loses, it must resign."),
+    "filibuster": (r"filibuster",
+                   "Dragging out a debate with long speeches to stop a vote from happening."),
+    "impeachment": (r"impeach(?:ment|ed)?",
+                    "A formal process for charging a senior official, such as a president or judge, with serious misconduct and possibly removing them."),
+    "executive order": (r"executive order",
+                        "A directive issued by a president that has the force of law without needing a vote in the legislature."),
+    "veto": (r"veto",
+             "The power to reject a decision or law so that it cannot go ahead."),
+    "coalition": (r"coalition",
+                  "A government formed by several parties that agree to work together because no single party has a majority."),
+    "caretaker government": (r"caretaker government",
+                             "A temporary government that only handles day-to-day matters until a new government is formed or elections are held."),
+    "sanctions": (r"sanctions?",
+                  "Penalties that one or more countries put on another country, company or person, such as trade limits or frozen assets, to force a change in behaviour."),
+    "ceasefire": (r"cease[- ]?fire",
+                  "An agreement to stop fighting for a period. It is not the same as a peace treaty."),
+    "tariff": (r"tariffs?",
+               "A tax a government puts on imported goods. It makes them more expensive so that local products become more competitive."),
+    "embargo": (r"embargo",
+                "An official ban on trade with a particular country."),
+    "referendum": (r"referendum",
+                   "A vote in which all voters answer a single question directly, such as whether to leave a union."),
+    "delimitation": (r"delimitation",
+                     "Redrawing the boundaries of election constituencies so that each has roughly the same population."),
+    # ── economy & markets ──
+    "Sensex": (r"Sensex",
+               "The BSE Sensex is an index that tracks the share prices of 30 large companies on the Bombay Stock Exchange. It is used as a quick measure of how the Indian market is doing."),
+    "Nifty": (r"Nifty(?: 50)?",
+              "The Nifty 50 is an index that tracks the share prices of 50 large companies on the National Stock Exchange. Like the Sensex, it shows the overall mood of the Indian market."),
+    "bond yield": (r"bond yields?|yields? on (?:government )?(?:bonds|securities|treasur\w+)|treasury yields?|10-year yield",
+                   "The return an investor gets for lending money to a government by buying its bond. When bond prices fall, yields rise. Higher yields make shares less attractive, so markets often fall when they climb."),
+    "repo rate": (r"repo rate",
+                  "The interest rate at which the central bank lends money to banks. When it goes up, loans such as home loans generally get more expensive."),
+    "inflation": (r"inflation",
+                  "How fast prices of everyday things are rising. If inflation is 6%, what cost 100 rupees a year ago now costs about 106."),
+    "CPI": (r"CPI|consumer price index",
+            "Consumer Price Index: the number that tracks how the prices of a typical basket of household goods and services change. It is the main measure of inflation."),
+    "GDP": (r"GDP|gross domestic product",
+            "Gross Domestic Product: the total value of everything a country produces in a period. Its growth rate is the standard measure of how fast the economy is growing."),
+    "fiscal deficit": (r"fiscal deficit",
+                       "The gap between what a government spends and what it earns (excluding borrowing) in a year. The government must borrow to cover it."),
+    "current account deficit": (r"current account deficit|CAD",
+                                "When a country pays more to the rest of the world (for imports, interest and so on) than it earns from it. It has to be financed by foreign money."),
+    "FDI": (r"FDI|foreign direct investment",
+            "Foreign Direct Investment: when a company or investor from abroad puts money into a business or factory in another country for the long term."),
+    "FPI": (r"FPIs?|foreign portfolio investors?|FIIs?|foreign institutional investors?",
+            "Foreign investors who buy shares and bonds in another country's markets. They can pull money out quickly, so their buying or selling moves markets."),
+    "IPO": (r"IPO|initial public offering",
+            "Initial Public Offering: when a company sells its shares to the public for the first time and gets listed on the stock exchange."),
+    "grey market premium": (r"grey market premium|GMP",
+                            "The unofficial extra price at which a company's IPO shares are being traded before they list. It hints at how the market expects the listing to go, but it is not regulated or guaranteed."),
+    "SEBI": (r"SEBI",
+             "Securities and Exchange Board of India: the regulator that makes rules for and polices the stock market, to protect investors."),
+    "RBI": (r"RBI|Reserve Bank of India",
+            "Reserve Bank of India: the country's central bank. It sets interest rates, controls the money supply and regulates banks."),
+    "MPC": (r"MPC|Monetary Policy Committee",
+            "Monetary Policy Committee: the RBI panel that decides the repo rate to keep inflation in check."),
+    "rate cut": (r"rate cuts?",
+                 "When a central bank lowers its main interest rate, which usually makes borrowing cheaper and encourages spending and investment."),
+    "recession": (r"recession",
+                  "A period, usually at least two quarters in a row, when a country's economy shrinks instead of grows."),
+    "Brent crude": (r"Brent(?: crude)?",
+                    "Brent crude is the main international benchmark price for oil. Petrol, transport and many product prices follow it."),
+    "market capitalisation": (r"market cap(?:italisation|italization)?",
+                              "The total value of a company's shares: share price multiplied by the number of shares. It is the standard way to say how big a listed company is."),
+    "dividend": (r"dividends?",
+                 "A share of a company's profit paid out to its shareholders."),
+    "short selling": (r"short[- ]sell(?:ing|er|ers)?|short position",
+                      "Betting that a share price will fall: an investor borrows shares, sells them, and hopes to buy them back cheaper later."),
+    "hedge fund": (r"hedge funds?",
+                   "A privately run investment fund that uses aggressive strategies, such as betting on price falls, to try to make large profits for wealthy investors."),
+    "stimulus": (r"stimulus",
+                 "Government or central-bank action, such as spending or cheaper loans, meant to boost a weak economy."),
+    "subsidy": (r"subsid(?:y|ies)",
+                "Money the government pays to lower the price of something for buyers or producers, such as fertiliser or cooking gas."),
+    "GST": (r"GST|goods and services tax",
+            "Goods and Services Tax: the single national tax on most goods and services in India, which replaced many older state and central taxes."),
+    # ── companies & business ──
+    "holding company": (r"holding company",
+                        "A company whose main business is owning shares in other companies, which lets it control them."),
+    "hostile takeover": (r"hostile takeover",
+                         "An attempt to buy a company against the wishes of its management or board."),
+    "insolvency": (r"insolvency|bankruptcy",
+                   "When a person or company cannot pay its debts. A court process then decides how the creditors get repaid."),
+    "merger": (r"mergers?",
+               "Two companies joining to form one."),
+    "quarterly results": (r"quarterly results|Q[1-4] results",
+                          "The financial report a listed company publishes every three months, showing its revenue and profit."),
+    # ── science, health, tech ──
+    "generative AI": (r"generative AI|genAI",
+                      "Artificial intelligence that creates new content, such as text, images or code, after learning from huge amounts of examples."),
+    "LLM": (r"LLMs?|large language models?",
+            "Large Language Model: an AI system trained on huge amounts of text so that it can understand and write language, like the one behind ChatGPT."),
+    "semiconductor": (r"semiconductors?|microchips?|computer chips?|AI chips?",
+                      "The tiny electronic chips that act as the brains of phones, cars, computers and almost every modern machine."),
+    "GPU": (r"GPUs?",
+            "Graphics Processing Unit: a chip that does very many simple calculations at once. Originally for graphics, now the main hardware used to train AI."),
+    "vaccine efficacy": (r"efficacy",
+                         "How well a vaccine or treatment works in a carefully controlled clinical trial."),
+    "clinical trial": (r"clinical trials?",
+                       "A carefully run medical study on people to test whether a new drug or treatment is safe and works."),
+    "pandemic": (r"pandemic",
+                 "A disease outbreak that spreads across many countries or continents at the same time."),
+    # ── world affairs ──
+    "BRICS": (r"BRICS",
+              "A group of large emerging economies, originally Brazil, Russia, India, China and South Africa, that coordinate on trade and politics."),
+    "G20": (r"G20",
+            "The group of 19 of the world's largest economies plus the European Union and African Union that meets regularly to coordinate economic policy."),
+    "NATO": (r"NATO",
+             "North Atlantic Treaty Organization: a military alliance of North American and European countries that promise to defend each other if one is attacked."),
+    "UN Security Council": (r"UN Security Council|Security Council|UNSC",
+                            "The United Nations body that can order sanctions or approve the use of force. Five countries (the US, UK, France, Russia and China) can each veto its decisions."),
+    "Quad": (r"Quad",
+             "A grouping of four countries, India, the US, Japan and Australia, that cooperate on security and infrastructure in the Indo-Pacific region."),
+    "Line of Actual Control": (r"Line of Actual Control|LAC",
+                               "The de facto border between India and China. It is not fully agreed on and not marked on the ground, which leads to frequent stand-offs."),
+    "proxy war": (r"proxy war",
+                  "A conflict in which two powers fight indirectly by backing opposing sides in another country instead of fighting each other directly."),
+    "asylum": (r"asylum",
+               "Protection that a country gives to a person who fled their own country because they fear persecution."),
+    "extradition": (r"extradition|extradite[sd]?",
+                    "Formally sending an accused or convicted person from one country to another to face trial or punishment."),
+    # ── education, society ──
+    "NEET": (r"NEET",
+             "National Eligibility cum Entrance Test: the all-India entrance exam for medical (MBBS and related) courses."),
+    "JEE": (r"JEE(?: Main| Advanced)?",
+            "Joint Entrance Examination: the exam that decides admission to IITs and other engineering colleges in India."),
+    "IIT": (r"IITs?|Indian Institutes? of Technology",
+            "Indian Institutes of Technology: a group of very selective government engineering universities."),
+    "SC/ST/OBC": (r"OBCs?|Other Backward Classes",
+                  "Other Backward Classes: socially and educationally disadvantaged groups for whom India reserves a share of government jobs and college seats."),
+    "reservation": (r"reservations?(?! at)",
+                    "In India, a system that keeps a fixed share of government jobs and college seats for certain disadvantaged groups."),
+}
+
+_COMPILED = [(term, re.compile(r"(?<![A-Za-z])(?:" + pat + r")(?![A-Za-z])", re.I if term not in ("FIR", "ED", "CBI", "NIA", "GDP", "CPI", "RBI", "MPC", "GST", "IPO", "PIL", "LLM", "GPU", "LAC", "OBC") else 0), meaning)
+             for term, (pat, meaning) in _ENTRIES.items()]
+
+
+def find_terms(text: str, limit: int = 6) -> list[dict]:
+    """Curated definitions for terms that appear in `text`, in order of first appearance."""
+    hits = []
+    for term, rx, meaning in _COMPILED:
+        m = rx.search(text)
+        if m:
+            hits.append((m.start(), {"term": m.group(0), "meaning": meaning, "curated": True}))
+    hits.sort(key=lambda x: x[0])
+    seen, out = set(), []
+    for _, h in hits:
+        k = h["meaning"][:40]
+        if k not in seen:
+            seen.add(k)
+            out.append(h)
+    return out[:limit]

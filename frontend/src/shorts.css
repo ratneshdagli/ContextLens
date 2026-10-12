@@ -1,0 +1,18 @@
+/* In short: one story per screen, snap-scrolled (classes prefixed sh-) */
+.sh-wrap { max-width: 720px; margin: 0 auto; height: calc(100vh - 120px); min-height: 460px; display: flex; flex-direction: column; }
+.sh-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 4px 0 10px; }
+.sh-topics { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.sh-topics .chip { cursor: pointer; border: 1px solid var(--line); background: var(--surface); flex: none; }
+.sh-topics .chip.on { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.sh-lang { width: auto; min-width: 96px; }
+.sh-count { color: var(--ink-3); font-size: 13px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sh-deck { flex: 1; overflow-y: auto; scroll-snap-type: y mandatory; border-radius: var(--r-lg); outline-offset: 2px; scrollbar-width: none; }
+.sh-card { height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; box-sizing: border-box; margin-bottom: 0; }
+.sh-img { width: 100%; height: 38%; object-fit: cover; background: var(--surface-2); }
+.sh-body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 12px; flex: 1; min-height: 0; }
+.sh-meta { display: flex; align-items: center; gap: 10px; color: var(--ink-3); font-size: 13px; }
+.sh-body h2 { font-family: var(--serif); font-size: clamp(21px, 3.2vw, 28px); line-height: 1.22; margin: 0; }
+.sh-body p { font-size: 17px; line-height: 1.55; color: var(--ink-2); margin: 0; overflow-y: auto; }
+.sh-actions { margin-top: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+.sh-empty { padding: 48px 12px; text-align: center; color: var(--ink-3); }
+@media (max-width: 720px) { .sh-wrap { height: calc(100vh - 150px); } .sh-body { padding: 16px; } }

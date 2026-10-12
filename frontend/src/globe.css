@@ -1,0 +1,171 @@
+/* ContextLens v7 — Globe page. Prefix gl-; colours come from the app tokens (index.css), so dark mode follows the theme. */
+
+.main:has(.gl-root) { padding: 0; overflow: hidden; }
+.main:has(.gl-root) .mobile-top { margin: 0; padding: 8px 12px; }
+
+.gl-root { position: relative; height: 100vh; height: 100dvh; min-height: 520px; overflow: hidden; background: #02040a; }
+.gl-map {
+  position: absolute; inset: 0;
+  /* space behind the transparent globe canvas: deep gradient + two star layers */
+  background:
+    radial-gradient(1px 1px at 12% 22%, #fff, transparent), radial-gradient(1px 1px at 64% 80%, #dbe6ff, transparent),
+    radial-gradient(1.4px 1.4px at 38% 56%, #fff, transparent), radial-gradient(1px 1px at 86% 18%, #cfe0ff, transparent),
+    radial-gradient(ellipse at 50% 42%, #0e1d38 0%, #070d1b 55%, #02040a 100%);
+  background-size: 210px 190px, 270px 230px, 330px 300px, 180px 250px, 100% 100%;
+}
+.gl-map canvas { outline: none; }
+
+.gl-glass {
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5); backdrop-filter: blur(18px) saturate(1.5);
+  border: 1px solid color-mix(in srgb, var(--line-2) 70%, transparent);
+  border-radius: var(--r-lg); box-shadow: var(--shadow), 0 14px 40px rgba(0, 0, 0, .22);
+  color: var(--ink);
+}
+
+/* ── top-left controls ── */
+.gl-ctl { position: absolute; z-index: 5; top: 12px; left: 12px; width: min(380px, calc(100% - 76px)); display: flex; flex-direction: column; gap: 8px; }
+.gl-search { position: relative; display: flex; align-items: center; gap: 8px; padding: 0 10px 0 12px; height: 42px; border-radius: 999px; color: var(--ink-3); }
+.gl-search input { flex: 1; min-width: 0; height: 100%; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 14px; }
+.gl-search:focus-within { border-color: var(--ink-3); }
+.gl-x { display: inline-grid; place-items: center; width: 24px; height: 24px; border: 0; border-radius: 50%; background: transparent; color: var(--ink-3); cursor: pointer; }
+.gl-x:hover { background: var(--surface-2); color: var(--ink); }
+.gl-dd { position: absolute; left: 0; right: 0; top: calc(100% + 6px); list-style: none; margin: 0; padding: 6px; border-radius: 14px; max-height: 300px; overflow: auto;
+  background: var(--surface); border: 1px solid var(--line-2); box-shadow: var(--shadow), 0 14px 40px rgba(0, 0, 0, .25); }
+.gl-dd li { display: flex; justify-content: space-between; gap: 10px; padding: 8px 10px; border-radius: 9px; cursor: pointer; font-size: 14px; color: var(--ink); }
+.gl-dd li.on { background: var(--surface-2); }
+.gl-dd small { color: var(--ink-3); font-size: 12.5px; }
+
+.gl-tools { display: flex; flex-wrap: wrap; gap: 6px; }
+.gl-pill {
+  height: 32px; padding: 0 12px; border-radius: 999px; font-size: 13px; font-weight: 500; cursor: pointer; color: var(--ink-2);
+  background: color-mix(in srgb, var(--surface) 82%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border: 1px solid color-mix(in srgb, var(--line-2) 70%, transparent); box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+.gl-pill:hover { color: var(--ink); border-color: var(--ink-3); }
+.gl-pill.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.gl-pill:disabled { opacity: .5; cursor: not-allowed; }
+.gl-note { padding: 9px 12px; font-size: 13px; color: var(--ink-2); border-radius: 12px; }
+
+.gl-filters { padding: 10px; display: flex; flex-direction: column; gap: 10px; max-height: 46vh; overflow: auto; }
+.gl-chiprow { display: flex; flex-wrap: wrap; gap: 5px; }
+.gl-chiprow .chip { gap: 6px; }
+.gl-row2 { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.gl-seg { display: inline-flex; padding: 2px; border-radius: 9px; background: var(--surface-2); border: 1px solid var(--line); }
+.gl-seg button { height: 26px; padding: 0 10px; border: 0; border-radius: 7px; background: transparent; color: var(--ink-2); font-size: 12.5px; font-weight: 500; cursor: pointer; }
+.gl-seg button.on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(0, 0, 0, .18); }
+.gl-sel { height: 30px; padding: 0 8px; border-radius: 9px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); font-size: 12.5px; max-width: 150px; }
+
+.gl-pip { display: inline-block; flex: none; width: 10px; height: 10px; border-radius: 50%; box-shadow: 0 0 0 2px color-mix(in srgb, currentColor 0%, transparent), 0 0 8px 0 rgba(255, 255, 255, .15); }
+.gl-pip.sm { width: 8px; height: 8px; }
+
+/* ── states ── */
+.gl-state { position: absolute; z-index: 6; left: 50%; top: 42%; transform: translate(-50%, -50%); width: min(420px, calc(100% - 32px)); padding: 22px; text-align: center; }
+.gl-state h3, .gl-fallback h3 { font-family: var(--serif); font-size: 22px; margin-bottom: 6px; }
+.gl-state p, .gl-fallback p { color: var(--ink-2); margin-bottom: 14px; font-size: 14px; }
+.gl-fallback { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; padding: 24px; background: var(--bg); color: var(--ink); }
+.gl-fallback p { max-width: 420px; }
+.gl-reopen { position: absolute; z-index: 5; top: 12px; right: 12px; height: 38px; padding: 0 14px; display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 600; cursor: pointer; border-radius: 999px; }
+
+/* ── side panel (bottom sheet on phones) ── */
+.gl-panel { position: absolute; z-index: 5; top: 12px; right: 12px; bottom: 36px; width: 380px; display: flex; flex-direction: column; overflow: hidden; transition: transform .35s cubic-bezier(.2, .8, .2, 1), height .3s ease; }
+.gl-panel.closed { transform: translateX(calc(100% + 24px)); pointer-events: none; }
+.gl-grab { display: none; }
+.gl-head { padding: 14px 16px 0; flex: none; }
+.gl-live { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+.gl-live b { letter-spacing: .08em; font-size: 11px; color: var(--good); }
+.gl-count { flex: 1; min-width: 0; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gl-livedot { width: 8px; height: 8px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 0 var(--good); animation: gl-live 2s infinite; }
+.gl-livedot.off { background: var(--bad); animation: none; }
+.gl-live:has(.off) b { color: var(--bad); }
+@keyframes gl-live { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 55%, transparent); } 80%, 100% { box-shadow: 0 0 0 7px transparent; } }
+.gl-sub { margin: 3px 0 10px; font-size: 12px; color: var(--ink-3); min-height: 16px; }
+.gl-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+.gl-tabs button { padding: 8px 12px; border: 0; background: none; font-size: 13.5px; font-weight: 600; color: var(--ink-3); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.gl-tabs button.on { color: var(--ink); border-bottom-color: var(--accent); }
+.gl-body { flex: 1; min-height: 0; overflow-y: auto; padding: 8px 10px 12px; overscroll-behavior: contain; }
+.gl-h { font-family: var(--serif); font-size: 17px; font-weight: 600; margin: 12px 6px 4px; letter-spacing: -.01em; }
+.gl-h2 { margin: 12px 6px 2px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; }
+.gl-hint, .gl-empty { margin: 14px 6px; font-size: 13.5px; color: var(--ink-3); line-height: 1.5; }
+.gl-list { list-style: none; margin: 0; padding: 0; }
+.gl-row { width: 100%; display: flex; align-items: flex-start; gap: 10px; text-align: left; padding: 9px 8px; border: 0; border-radius: 10px; background: none; color: var(--ink); cursor: pointer; text-decoration: none; }
+.gl-row:hover, .gl-row.on { background: var(--surface-2); }
+.gl-row:focus-visible, .gl-pill:focus-visible, .gl-tabs button:focus-visible, .gl-seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.gl-row .gl-pip { margin-top: 5px; }
+.gl-row > svg { flex: none; margin-top: 3px; color: var(--ink-3); }
+.gl-row-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.gl-row-t { font-size: 14px; line-height: 1.35; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.gl-meta { font-size: 12px; color: var(--ink-3); }
+
+.gl-stack { display: flex; flex-direction: column; gap: 10px; }
+.gl-card { padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); display: flex; flex-direction: column; gap: 9px; align-items: flex-start; }
+.gl-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.gl-chips .chip { gap: 6px; }
+.gl-card-t { font-family: var(--serif); font-size: 19px; line-height: 1.25; font-weight: 600; letter-spacing: -.01em; }
+.gl-card-src { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 13px; color: var(--ink-2); }
+
+.gl-skels { display: flex; flex-direction: column; gap: 10px; padding: 8px 6px; }
+.gl-skel { height: 44px; border-radius: 10px; background: linear-gradient(90deg, var(--surface-2) 25%, var(--line) 50%, var(--surface-2) 75%); background-size: 200% 100%; animation: gl-shimmer 1.4s linear infinite; }
+@keyframes gl-shimmer { to { background-position: -200% 0; } }
+
+.gl-legend { flex: none; display: flex; flex-wrap: wrap; gap: 4px 10px; padding: 10px 14px 12px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--ink-2); }
+.gl-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.gl-legend i { width: 8px; height: 8px; border-radius: 50%; }
+.gl-legend small { flex-basis: 100%; color: var(--ink-3); font-size: 11px; }
+
+/* ── maplibre chrome: tooltip, nav, attribution ── */
+.gl-tip {
+  position: absolute; z-index: 8; left: 0; top: 0; width: 272px; max-width: calc(100% - 16px); padding: 11px 13px 10px; pointer-events: none;
+  background: color-mix(in srgb, var(--surface) 94%, transparent); color: var(--ink); border: 1px solid var(--line-2); border-radius: 14px;
+  -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 14px 34px rgba(0, 0, 0, .34);
+  opacity: 0; transform: translateY(4px) scale(.96); transition: opacity .14s ease, transform .16s cubic-bezier(.2, .8, .2, 1);
+}
+.gl-tip.on { opacity: 1; transform: none; }
+.gl-tip::after {                                  /* arrow towards the marker */
+  content: ''; position: absolute; left: var(--ax, 50%); bottom: -5px; width: 9px; height: 9px; margin-left: -5px; transform: rotate(45deg);
+  background: inherit; border: solid var(--line-2); border-width: 0 1px 1px 0;
+}
+.gl-tip.below::after { bottom: auto; top: -5px; border-width: 1px 0 0 1px; }
+.gl-tip-chip { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 6px; padding: 2px 8px 2px 7px; border-radius: 999px; background: var(--surface-2); font-size: 11px; font-weight: 600; letter-spacing: .02em; color: var(--ink-2); }
+.gl-tip-t { font-size: 13.5px; font-weight: 600; line-height: 1.32; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.gl-tip-m { font-size: 12px; color: var(--ink-3); margin-top: 4px; }
+.gl-tip-hint { margin-top: 7px; padding-top: 6px; border-top: 1px solid var(--line); font-size: 11px; font-weight: 600; color: var(--accent); }
+.gl-tip-list { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.gl-tip-list li { font-size: 12.5px; line-height: 1.3; color: var(--ink-2); padding-left: 10px; position: relative; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.gl-tip-list li::before { content: ''; position: absolute; left: 0; top: .5em; width: 4px; height: 4px; border-radius: 50%; background: var(--ink-3); }
+
+.gl-area { position: absolute; z-index: 5; left: 12px; bottom: 44px; display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 14px 0 12px; border-radius: 999px; font-size: 12.5px; font-weight: 500; color: var(--ink-2); pointer-events: none; animation: gl-in .2s ease-out; }
+.gl-area i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: gl-live 1.4s infinite; }
+.gl-area.done i { background: var(--good); }
+@keyframes gl-in { from { opacity: 0; transform: translateY(6px); } }
+.gl-root .maplibregl-ctrl-top-right { top: 12px; right: 404px; transition: right .35s cubic-bezier(.2, .8, .2, 1), top .2s; }
+.gl-root:not(.panel-open) .maplibregl-ctrl-top-right { right: 12px; top: 58px; }
+.gl-root .maplibregl-ctrl-group { background: color-mix(in srgb, var(--surface) 85%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border: 1px solid var(--line-2); border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; }
+.gl-root .maplibregl-ctrl-group button { background-color: transparent; }
+.gl-root .maplibregl-ctrl-group button + button { border-top: 1px solid var(--line); }
+:root[data-theme='dark'] .gl-root .maplibregl-ctrl-icon { filter: invert(1) hue-rotate(180deg); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .gl-root .maplibregl-ctrl-icon { filter: invert(1) hue-rotate(180deg); } }
+.gl-root .maplibregl-ctrl-bottom-left { left: 8px; bottom: 6px; }
+.gl-root .maplibregl-ctrl-attrib { background: color-mix(in srgb, var(--surface) 75%, transparent); color: var(--ink-3); border-radius: 8px; font-size: 11px; padding: 1px 8px; }
+.gl-root .maplibregl-ctrl-attrib a { color: var(--ink-2); }
+
+/* ── phones: panel becomes a bottom sheet that peeks above the attribution strip ── */
+@media (max-width: 900px) {
+  .gl-root { height: calc(100dvh - 124px); min-height: 420px; }
+  .gl-ctl { width: calc(100% - 68px); left: 8px; top: 8px; }
+  .gl-root .maplibregl-ctrl-top-right, .gl-root:not(.panel-open) .maplibregl-ctrl-top-right { right: 8px; top: 8px; }
+  .gl-reopen { display: none; }
+  .gl-filters { max-height: 34vh; }
+  .gl-area { bottom: 156px; }
+  .gl-panel { top: auto; left: 8px; right: 8px; bottom: 28px; width: auto; height: 58%; border-radius: 20px 20px 16px 16px; }
+  .gl-panel.closed { transform: none; height: 116px; pointer-events: auto; }   /* peek: header + tabs only, attribution strip stays visible below */
+  .gl-grab { display: block; flex: none; width: 100%; height: 22px; border: 0; background: none; cursor: grab; touch-action: none; position: relative; }
+  .gl-grab::after { content: ''; position: absolute; left: 50%; top: 9px; width: 38px; height: 4px; margin-left: -19px; border-radius: 2px; background: var(--line-2); }
+  .gl-head { padding-top: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gl-panel, .gl-root .maplibregl-ctrl-top-right, .gl-tip { transition: none; }
+  .gl-tip { transform: none; }
+  .gl-area, .gl-area i, .gl-livedot { animation: none; }}

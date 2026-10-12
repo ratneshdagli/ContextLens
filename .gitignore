@@ -1,0 +1,39 @@
+# environments & deps
+venv/
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# secrets and local config (API keys live in backend/.env; see backend/.env.example)
+.env
+.env.*
+!.env.example
+backend/.env
+
+# local data
+*.db
+*.db-wal
+*.db-shm
+*.sqlite*
+
+# builds
+frontend/dist/
+
+# logs
+*.log
+.server.err
+.server.out
+
+# scratch / evaluation output
+_*.db
+_eval_out*.txt
+_research_ids.txt
+_legacy_v2/
+
+# other projects and tooling that share this folder
+quantlens/
+brag-output/
+tools/camofox-browser/
