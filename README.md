@@ -3,8 +3,12 @@
 **A news assistant that explains.** Most news apps show you what happened. ContextLens tells you *why it happened*, *what led up to it*,
 and *who is involved* — in plain language — and lets you pull on any thread until you understand it.
 
-Local-first: it runs on your own machine with [LM Studio](https://lmstudio.ai) (language models) and SearXNG (web search).
-Nothing about your reading leaves your computer.
+Local-first: it runs on your own machine with [LM Studio](https://lmstudio.ai) (language models) and SearXNG (web search), and your reading history stays in a local SQLite file.
+Cloud chat providers are optional and used only if you add their keys to `backend/.env`; embeddings always stay local.
+
+![ContextLens demo](docs/demo.gif)
+
+[Watch the 86-second film (mp4)](docs/demo.mp4). It is the real UI with news photos blurred; the intro, cards and captions are added in editing.
 
 ## What makes it different
 
@@ -36,6 +40,15 @@ Nothing about your reading leaves your computer.
 
 **One model at a time.** On a small GPU two chat models cannot coexist, so ContextLens unloads the previous chat model in LM Studio before loading the
 next one (the ~80 MB embedding model stays). See Settings → Models.
+
+## Screenshots
+
+Real screens from a running instance (news photos blurred).
+
+| | |
+|---|---|
+| ![Today](docs/screenshots/today.jpg) **Today**: ranked for your interests, with the stories that keep running. | ![Why](docs/screenshots/why.jpg) **Why it happened**: an oldest-cause-first chain, each step tied to the sentence it came from. |
+| ![Globe](docs/screenshots/globe.jpg) **Globe**: zoom to a city and read the news tied to it. | ![Sources](docs/screenshots/sources.jpg) **Sources**: 95 outlets, trust tiers and live counts. |
 
 ## Quick start (Windows)
 
